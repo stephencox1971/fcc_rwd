@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: fit-content;
+}
+#title, #subtitle {
+    font-family: 'Margarine', cursive;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex: row;
+}
+.maincopy {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+p {
+    text-align: justify;
+    max-width: 600px;
+}
+#comments{
+    width: 90%;
+    height: 400px;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#submit {
+    font-size: 200%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5%;
+    border-radius:10%;
+}
+#submit:hover, #submit:focus {
+    background-color: #83ff82;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCC: Technical Documentation Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+>
+
+<nav id="navbar">
+    <header id="doc-title">HTML Documentation</header
+    <ul>
+        <a class="nav-link" href="#What_is_HTML?" rel="internal">
+            <li>What is HTML?</li>
+        </a>
+        <a class="nav-link" href="#A_Simple_HTML_Document" rel="internal">
+            <li>A Simple HTML Document</li>
+        </a>
+        <a class="nav-link" href="#HTML_Tags" rel="internal">
+            <li>HTML Tags</li>
+        </a>
+        <a class="nav-link" href="#Web_Browsers" rel="internal">
+            <li>Web Browsers</li>
+        </a>
+        <a class="nav-link" href="#HTML_Page_Structure" rel="internal">
+            <li>HTML Page Structure</li>
+        </a>
+        <a class="nav-link" href="#The_DOCTYPE_Declaration" rel="internal">
+            <li>The DOCTYPE Declaration</li>
+        </a>
+        <a class="nav-link" href="#HTML_Versions" rel="internal">
+            <li>HTML Versions</li>
+        </a>
+        <a class="nav-link" href="#Reference" rel="internal">
+            <li>Reference</li>
+        </a>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="What_is_HTML?">
+        <header>What is HTML?</header>
+        <article>
+            <ul>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML stands for Hyper Text Markup Language HTML describes the structure of Web pages using markup
+                </li>
+                <li>HTML elements are the building blocks of HTML pages</li>
+                <li>HTML elements are represented by tags HTML tags label pieces of content such as "heading",
+                    "paragraph", "table", and so on
+                </li>
+                <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+            </ul>
+            </artice>
+    </section>
+    <section class="main-section" id="A_Simple_HTML_Document">
+        <header>A Simple HTML Document</header>
+        <article>
+            <h2>Example</h2>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                <br>
+                &lt;html&gt;
+                <br>
+                &lt;head&gt;
+                <br>
+                &lt;title&gt;Page Title&lt;/title&gt;
+                <br>
+                &lt;/head&gt;
+                <br>
+                &lt;body&gt;
+                <br>
+                &lt;h1&gt;My First Heading&lt;/h1&gt;
+                <br>
+                &lt;p&gt;My first paragraph.&lt;/p&gt;
+                <br>
+                &lt;/body&gt;
+                <br>
+                &lt;/html&gt;
+            </code>
+            <h2>Example Explained</h2>
+            <ul>
+                <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines this document to be HTML5</li>
+                <li>The <code>&lt;html&gt;</code> element is the root element of an HTML page</li>
+                <li>The <code>&lt;head&gt;</code> element contains meta information about the document</li>
+                <li>The <code>&lt;title&gt;</code> element specifies a title for the document</li>
+                <li>The <code>&lt;body>&gt;</code> element contains the visible page content</li>
+                <li>The <code>&lt;h1&gt;</code> element defines a large heading The <code>&lt;p&gt;</code> element
+                    defines a paragraph
+                </li>
+            </ul>
+            </artice>
+    </section>
+    <section class="main-section" id="HTML_Tags">
+        <header>HTML Tags</header>
+        <article>
+            <p>HTML tags are element names surrounded by angle brackets:</p>
+            <h3>&lt;tagname&gt;content goes here...&lt;/tagname&gt;</h3>
+            <ul>
+                <li>HTML tags normally come in pairs like &ltp&gt; and &lt/p&gt;</li>
+                <li>The first tag in a pair is the start tag, the second tag is the end tag</li>
+                <li>The end tag is written like the start tag, but with a forward slash inserted before the tag name
+                </li>
+                <br>
+                <p><strong>Tip</strong>: The start tag is also called the <strong>opening tag</strong>, and the end tag
+                    the <strong>closing tag</strong></p>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Web_Browsers">
+        <header>Web Browsers</header>
+        <article>
+            <p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display
+                them.</p>
+            <p>The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+            <img src="https://www.w3schools.com/html/img_chrome.png" alt="screenshot">
+        </article>
+    </section>
+    <section class="main-section" id="HTML_Page_Structure">
+        <header>HTML Page Structure</header>
+        <p>Below is a visualization of an HTML page structure:</p>
+        <div id="code-container">
+            <code>
+                <div id="html-code" class="code-box">
+                    &lt;html&gt;
+                    <br>
+                    <div id="head-code" class="code-box">
+                        &lt;head&gt;
+                        <br>
+                    <div id="title-code" class="code-box">
+                        &lt;title&gt;Page title&lt;/title&gt;
+                        <br>
+
+                    </div>
+                        &lt;/head>
+                    </div>
+
+                    <div id="body-code" class="code-box">
+                        &lt;body&gt;
+                        <br>
+                        <div id="content-code" class="code-box">
+                        &lt;h1&gt;This is a heading&lt;/h1&gt;
+                        <br>
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                        <br>
+                        &lt;p&gt;This is another paragraph.&lt;/p&gt;
+                        <br>
+                        </div>
+                        &lt;/body&gt;
+                        <br>
+                    </div>
+                    &lt;/html&gt;
+                    </div>
+            </code>
+            </div>
+        <p>Note: Only the content inside the <code>&lt;body&gt;</code> section (the white area above) is displayed in a browser.</p>
+
+            </code>
+        </div>
+        <div>
+
+
+    </section>
+    <section class="main-section" id="The_DOCTYPE_Declaration">
+        <header>The DOCTYPE Declaration</header>
+        <article>
+            <p>The <code>&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display
+                web.</p>
+            <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+            <p>The <code>&lt;!DOCTYPE&gt;</code> declaration is not case sensitive. The <code>&lt;!DOCTYPE&gt;</code>
+                declaration for HTML5 is:</p>
+            <code>&lt;!DOCTYPE html></code>
+        </article>
+    </section>
+    <section class="main-section" id="HTML_Versions">
+        <header>HTML Versions</header>
+        <p>Since the early days of the web, there have been many versions of HTML:</p>
+        <table>
+            <tr>
+                <th>Version</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>1991</td>
+            </tr>
+            <tr>
+                <td>HTML 2.0</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>HTML 3.2</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td>HTML 4.01</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>XHTML</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>2014</td>
+            </tr>
+        </table>
+        <article>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                    <li>All the documentation in this page is taken from <a
+                            href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+                </article>
+            </section>
+</main>
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+
+<script src="js/index.js"></script>
+
+
+</body>
+
+</html>

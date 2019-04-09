@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comics Survey</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  
+</head>
+
+<body>
+<main>
+  <header>
+<h1  id="title">Comics Survey</h1>
+    <h2 id="subtitle">
+      Win tickets to Avengers: Endgame
+    </h2>
+  </header>
+<!--  https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/DC_Comics_Logo.svg/1200px-DC_Comics_Logo.svg.png-->
+<!--  https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Marvel-Comics-Logo.svg/2560px-Marvel-Comics-Logo.svg.png-->
+ <div class="flex-container">
+   <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Marvel-Comics-Logo.svg/2560px-Marvel-Comics-Logo.svg.png" width="30%" height="30%"/>
+  <article class="maincopy">
+  <p id="description">Enter our survey and you could win tickets to see Avengers: Endgame on its opening night. Are you Marvel or DC, or do you prefer other publishers? Who is your favourite character? Which is your favourite team?</p>
+    <form id="survey-form">
+    <div>
+      <label id='name-label'>Name:</label>
+      <input id="name" required placeholder="Stan Lee" size="30">
+    </div>
+    <div>
+      <label id='number-label'>Mobile:</label>
+      <input id="number" type="number" required placeholder="1234 9876543"
+             min="11" max="11" pattern="^\d{4}\s\d{6}"size="11">
+      <span>Format: 1234 987654</span>
+    </div>
+    <div>
+      <label id='email-label'>Email:</label>
+      <input id="email" type="email" required placeholder="comicsfan@excelsior.com" size="30">
+    </div>
+    <div>
+      <label for="dropdown">Favourite Comic Character:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="Superman">Superman</option>
+        <option value="Batman">Batman</option>
+        <option value="Wonder Woman">Wonder Woman</option>
+        <option value="Spiderman">Spiderman</option>
+        <option value="Wolverine">Wolverine</option>
+        <option value="Captain Marvel">Captain Marvel</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div>
+      <p>Favourite Comics Publisher:</p>
+
+      <input type="radio" id="Marvel" name="publisher" value="Marvel" checked>
+      <label for="Marvel">Marvel</label>
+      <input type="radio" id="DC" name="publisher" value="DC">
+      <label for="DC">DC</label>
+      <input type="radio" id="Other" name="publisher" value="Other">
+      <label for="Other">Other</label>
+    </div>
+    <div>
+      <p>Favourite Superteam(s)</p>
+      <div>
+        <input type="checkbox" id="justiceleague" name="justiceleague" value="justiceleague">
+        <label for="justiceleague">Justice League</label>
+      </div>
+      <div>
+        <input type="checkbox" id="justicesociety" name="justicesociety" value="justicesociety">
+        <label for="justicesociety">Justice Society of America</label>
+      </div>
+      <div>
+        <input type="checkbox" id="teentitans" name="teentitans" value="teentitans">
+        <label for="teentitans">Teen Titans</label>
+      </div>
+      <div>
+        <input type="checkbox" id="avengers" name="avengers" value="avengers">
+        <label for="avengers">The Avengers</label>
+      </div>
+      <div>
+        <input type="checkbox" id="xmen" name="xmen" value="xmen">
+        <label for="xmen">The X-Men</label>
+      </div>
+      <div>
+        <input type="checkbox" id="guardians" name="guardians" value="guardians">
+        <label for="guardians">Guardians of the Galaxy</label>
+      </div>
+      <div>
+        <input type="checkbox" id="other" name="other" value="other">
+        <label for="other">Other</label>
+      </div>
+    </div>
+    <div>
+      <label for="comments">Additional Comments. If you answered "Other" to any questions please feel free to add them here.</label>
+      <br>
+      <textarea id="comments"></textarea>
+    </div>
+    <div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+  </article>
+   <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/DC_Comics_Logo.svg/1200px-DC_Comics_Logo.svg.png" width="30%" height="30%"/>
+</div>
+</main>
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
